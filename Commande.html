@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <header class=" container d-flex align-items-center bg-success text-white">
+    <header class="container-fluid d-flex align-items-center bg-success text-white">
         <img src="Images/logoEcoEats3.jpg" alt="Logo" class="col-1">
         <aside class="col-4"></aside>
         <h1 class="col-8"><u>ECO EATS</u></h1>
     </header>
 
-    <nav class="container d-flex justify-content-center bg-light text-white">
+    <nav class="container-fluid d-flex justify-content-center bg-light text-white">
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link" href="Carte.html" target="_blank">Carte</a>
@@ -89,13 +89,17 @@
           <label for="quantiteDessert" class="my-1">Quantité :</label>
           <input type="text" class="form-control" id="quantiteDessert" name="quantiteDessert" placeholder="Quantité" pattern="[0-9]">
         </section>
+        <section class="form-group w-25 mt-5">
+          <label for="code" class="my-1">Code promo :</label>
+          <input type="text" class="form-control" id="code" name="code" placeholder="Code promo" pattern="[0-9]">
+        </section>
         <section class="mt-5 d-flex justify-content-center">
           <button type="button" class="btn btn-primary">Ajouter au panier</button>
         </section>
       </form>
     </section>
 
-    <footer class="container bg-danger my-5 fs-6">
+    <footer class="container-fluid bg-danger my-5 fs-6">
         <section class="row d-flex align-items-center">
           <section class="col-md-3 col-sd-4">
             <h5>SARL ECO EATS</h5>
