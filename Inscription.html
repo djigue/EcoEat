@@ -41,7 +41,7 @@
           <section>
             <label for="civilite">Civilité :</label>
             <select class="custom-select w-25" name="civilite" id="civilite">
-              <option value="1"></option>
+              <option value="1">.</option>
               <option value="2">Mademoiselle</option>
               <option value="3">Madame</option>
               <option value="4">Monsieur</option>
@@ -74,8 +74,8 @@
             <input type="text" class="form-control" id="téléphone" name="téléphone" placeholder="Votre numero de téléphone ici" pattern="[0-9]">
           </section>
           <section class="form-group w-50">
-            <label for="adresse">Adresse de livraison:</label>
-            <input type="text" class="form-control" id="adresseFact" name="adresseFact" placeholder="Votre adresse ici">
+            <label for="adresse">Adresse de livraison :</label>
+            <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Votre adresse ici">
           </section>
           <section class="form-group w-50">
             <label for="cp">Code postal :</label>
@@ -88,9 +88,9 @@
           <section class="form-group w-50 d-flex w-100 mt-4">
             <section class="custom-control custom-checkbox ">
               <p>L'adresse de facturation est-elle la même que celle de livraison ?</p>
-              <input type="checkbox" class="custom-control-input" id="oui" name="">
+              <input type="checkbox" class="custom-control-input" id="oui" name="oui">
               <label class="custom-control-label" for="oui">Oui</label>
-              <input type="checkbox" class="custom-control-input" id="non" name="">
+              <input type="checkbox" class="custom-control-input" id="non" name="non">
               <label class="custom-control-label" for="non">Non</label>
             </section>
           </section>
@@ -98,15 +98,15 @@
             <p>Si non veuillez nous indiquer l'adresse de facturation :</p>
             <section class="form-group w-50">
               <label for="adresseFact">Adresse de facturation :</label>
-              <input type="text" class="form-control" id="adresseFact" name="" placeholder="Votre adresse de facturation ici">
+              <input type="text" class="form-control" id="adresseFact" name="adresseFact" placeholder="Votre adresse de facturation ici">
             </section>
             <section class="form-group w-50">
               <label for="cp">Code postal :</label>
-              <input type="text" class="form-control" id="cp" name="" placeholder="Votre code postal ici" pattern="[0-9]">
+              <input type="text" class="form-control" id="cp" name="cp" placeholder="Votre code postal ici" pattern="[0-9]">
             </section>
             <section class="form-group w-50">
               <label for="ville">Ville :</label>
-              <input type="text" class="form-control" id="ville" name="" placeholder="Votre ville ici">
+              <input type="text" class="form-control" id="ville" name="ville" placeholder="Votre ville ici">
             </section>
           </section>
           <section class="d-flex justify-content-center mt-4">
