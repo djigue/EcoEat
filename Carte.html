@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
+
+  <!-- Header avec logo et titre -->
     <header class="container-fluid d-flex align-items-center bg-success text-white">
         <img src="Images/logoEcoEats3.jpg" alt="Logo" class="col-1">
         <aside class="col-4"></aside>
         <h1 class="col-8"><u>ECO EATS</u></h1>
     </header>
 
+    <!-- nav avec liste de lien autres pages positionnés en flex rows -->
     <nav class="container-fluid d-flex justify-content-center bg-light text-white">
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -25,6 +29,8 @@
               </li>
           </ul>      
     </nav>
+
+    <!-- carroussel pas dimentionné comme il faudrait -->
   <section class="container-fluid mt-5">
     <section class="row">
       <aside class="col-3"></aside>
@@ -60,7 +66,8 @@
       <aside class="col-3"></aside>
     </section>
   </section>
-    
+
+    <!-- tableau en flex colonnes -->
     <section class="d-flex flex-column justify-content-center align-items-center mt-5">
          <h1 class="mt-4"><u>CARTE</u></h1>
       <section class="mt-5">
@@ -171,11 +178,11 @@
                 <td>12,50 euros</td>
               </tr>
             </tbody>
-          </table>
-          
+          </table>  
       </section>
     </section>
 
+    <!-- footer avec mention légales, liens vers cgv et reseaux -->
     <footer class="container-fluid bg-danger my-5 fs-6">
         <section class="row d-flex align-items-center">
           <section class="col-md-3 col-sd-4">
@@ -217,7 +224,8 @@
       </footer>
       
 
-
+<!-- lien pour le script pour le carroussel -->
  <script src="js/bootstrap.bundle.min.js"></script>
+
  </body>
 </html>
