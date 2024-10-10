@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body style="background-color: rgb(245, 158, 7, 0.5)">
+<body style="background-image: url(Images/FondEcran.webp); background-size: cover;">
 
   <!-- Header avec logo et titre -->
     <header class="container-fluid d-flex align-items-center bg-success text-white">
@@ -17,7 +17,7 @@
     </header>
 
     <!-- nav avec liste de lien autres pages positionnés en flex rows style pour le laisser en haut quand on scroll-->
-    <nav class="container-fluid d-flex justify-content-center bg-success text-white" style="position: sticky; top: 0; z-index: 1000;">
+    <nav class="container-fluid d-flex justify-content-center bg-success text-white navbar navbar-expand-lg sticky-top w-75">
         <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link active text-dark" href="Index.html">Acceuil</a>
@@ -35,8 +35,8 @@
     </nav>
 
     <!-- formulaire positionné avec flex colonne -->
-    <section class="d-flex flex-column align-items-center" style="background-image: url(Images/BG2.webp); background-size: cover;">
-        <h2 class="my-5 text-white"><u>FORMULAIRE D'INSCRIPTION</u></h2>
+    <section class="d-flex flex-column align-items-center">
+        <h2 class="my-5 text-success" style="text-shadow: 2px 2px 5px white"><u>FORMULAIRE D'INSCRIPTION</u></h2>
       <form class="my-3 bg-secondary rounded w-50 p-3">
           <section>
             <label for="civilite">Civilité :</label>
@@ -49,41 +49,41 @@
               <option value="6">Elle/Il</option>
             </select>
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="nom">Nom :</label>
             <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom ici">
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="prenom">Prénom :</label>
             <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prénom ici">
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="email">Email :</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Votre email ici">
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="password">Mot de passe :</label>
             <input type="password" class="form-control" id="password" name="password" placeholder="Votre mot de passe ici">
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="passwordConfirm">Confirmez votre mot de passe :</label>
             <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Confirmez votre mot de passe ici">
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="téléphone">Téléphone :</label>
             <input type="text" class="form-control" id="téléphone" name="téléphone" placeholder="Votre numero de téléphone ici" pattern="[0-9]">
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="adresse">Adresse de livraison :</label>
             <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Votre adresse ici">
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="cp">Code postal :</label>
-            <input type="text" class="form-control" id="cpFact" name="cpFact" placeholder="Votre code postal ici" pattern="[0-9]">
+            <input type="text" class="form-control" id="cp" name="cp" placeholder="Votre code postal ici" pattern="[0-9]">
           </section>
-          <section class="form-group w-50">
+          <section class="form-group w-75">
             <label for="ville">Ville :</label>
-            <input type="text" class="form-control" id="villeFact" name="villeFact" placeholder="Votre ville ici">
+            <input type="text" class="form-control" id="ville" name="ville" placeholder="Votre ville ici">
           </section>
           <section class="form-group w-50 d-flex w-100 mt-4">
             <section class="custom-control custom-checkbox ">
@@ -96,17 +96,17 @@
           </section>
           <section class="mt-4">
             <p>Si non veuillez nous indiquer l'adresse de facturation :</p>
-            <section class="form-group w-50">
+            <section class="form-group w-75">
               <label for="adresseFact">Adresse de facturation :</label>
               <input type="text" class="form-control" id="adresseFact" name="adresseFact" placeholder="Votre adresse de facturation ici">
             </section>
-            <section class="form-group w-50">
-              <label for="cp">Code postal :</label>
-              <input type="text" class="form-control" id="cp" name="cp" placeholder="Votre code postal ici" pattern="[0-9]">
+            <section class="form-group w-75">
+              <label for="cpFact">Code postal :</label>
+              <input type="text" class="form-control" id="cpFact" name="cpFact" placeholder="Votre code postal ici" pattern="[0-9]">
             </section>
-            <section class="form-group w-50">
-              <label for="ville">Ville :</label>
-              <input type="text" class="form-control" id="ville" name="ville" placeholder="Votre ville ici">
+            <section class="form-group w-75">
+              <label for="villeFact">Ville :</label>
+              <input type="text" class="form-control" id="villeFact" name="villeFact" placeholder="Votre ville ici">
             </section>
           </section>
           <section class="d-flex justify-content-center mt-4">
