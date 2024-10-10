@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      /* Styles spécifiques au carrousel */
+      .carousel-item {
+          max-width: 100%;
+          height: 400px;
+          overflow: hidden;
+      }
+
+      .carousel-item img {
+          width: 100%;
+          height: 100%; 
+          object-fit: cover; 
+          transition: none; 
+      }
+  </style>
 </head>
 
 <body style="background-image: url(Images/FondEcran.webp); background-size: cover;">
@@ -30,6 +45,41 @@
               </li>
           </ul>      
     </nav>
+
+    
+
+<div id="carouselExampleControls" class="carousel slide w-50 h-25 mt-5 d-none d-md-block" data-bs-ride="carousel" style="max-width: 800px; margin: auto;">
+  <div class="carousel-inner" style="max-width: 800px; margin: auto;">
+    <div class="carousel-item active">
+      <img src="Images/carousel2.webp" class="d-block w-100" alt="Saumon grillé">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/carousel3.jpg" class="d-block w-100" alt="Salde avocat">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/carousel4.jpg" class="d-block w-100" alt="Riz Escalivada">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/carousel6.jpg" class="d-block w-100" alt="Saumon grillé">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/carousel5.jpg" class="d-block w-100" alt="Salde avocat">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/carousel1.jpg" class="d-block w-100" alt="Riz Escalivada">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
 
     <!-- tableau en flex colonnes -->
     <section class="d-flex flex-column justify-content-center align-items-center mt-5">
